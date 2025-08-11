@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    height: 100vh;
+    width: 100vw;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+.form-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+    form {
+      border: 1px solid #ccc;
+      height: fit-content;
+      padding: 2em 1.5em;
+      width: 300px;
+      margin: 2em;
+      border-radius: 10px;
+      box-shadow: 0px 10px 10px rgb(152, 152, 152);
+    }
+
+
+
+    input {
+      width: 100%;
+      padding: 0.5em 1em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+     
+    }
+
+    .submit-btn {
+      padding: 1em 2em;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      
+      transition: all ease-in 0.1s;
+    }
+
+    .submit-btn:hover{
+        transform: scale(1.05);
+    }
+
+    .input-box{
+        width: 100%;
+        
+    }
+
+     label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+    }
+
+       .reset-btn{
+      padding: 1em 2em;
+      border-radius: 4px;
+      background-color: rgb(56, 154, 56);
+      color: white;
+      border: none;
+      cursor: pointer;
+    
+      transition: all ease-in 0.1s;
+    }
+
+    .reset-btn:hover{
+        transform: scale(1.05);
+    }
+
+    .btn-div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signin-div{
+        margin-top: 1em;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        align-items: center;
+    }
+    a{
+        color: #007bff;
+        transition: all ease 0.2s;
+
+    }
+    a:hover{
+        color: #0056b3;
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body>
+    <main>
+             <h1 style="text-align: center; margin-top: 20px;">Sign Up</h1>
+        <div class="form-div">
+            <form action="" >
+                <div class="input-box">
+                <label for="">Username</label>
+                 <input type="text" value="" name="name" class="name"  placeholder="email">
+               </div>
+               <div class="input-box">
+                <label for="">Email</label>
+                 <input type="email" value="" name="email" class="email"  placeholder="email">
+               </div>
+               <div class="input-box">
+                <label for="">Password</label>
+                <input type="password" value="" name="password" class="password"  placeholder="password">
+               </div>
+                <div class="btn-div">
+                    <button class="submit-btn" onclick="handleSubmit()" type="submit">Register</button>
+                    <button class="reset-btn"  onclick="reset()">Reset</button>
+                </div>
+                <div class="signin-div">
+                    <p>already have an account </p>
+                    <a href="./login.html">Sign in</a>
+                </div>
+            </form>
+        </div>
+            
+    </main>
+
+
+    <script >
+
+
+const emailIn = document.querySelector(".email")
+const passwordIn = document.querySelector(".password")
+const nameIn = document.querySelector(".name")
+
+
+const handleSubmit =()=>{
+    
+    if (emailIn.value === '' || passwordIn.value === '' || nameIn.value === '') {
+        alert("Please fill in all fields");
+    }
+
+    
+    else  {
+        localStorage.setItem("user",
+            JSON.stringify({
+                name: nameIn.value,
+                email: emailIn.value,
+
+            })
+        )
+        
+        alert("user created  Successfully")
+    }
+    
+}
+
+const reset=()=>{
+    emailIn.value = ''
+    passwordIn.value = ''
+}
+    </script>
+</body>
+</html>
