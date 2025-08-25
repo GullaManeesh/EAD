@@ -29,6 +29,13 @@
             
         }
 
+        table td, table th {
+        vertical-align: middle !important;
+        text-align: center;
+    }
+
+        
+
        
     </style>
 </head>
@@ -40,7 +47,7 @@
         <table class="table table-bordered table-striped text-center">
 
             <thead>
-                <tr>
+                <tr >
                     <th scope="col">Period</th>
                     <th scope="col">I</th>
                     <th scope="col">II</th>
@@ -55,7 +62,7 @@
                     <th scope="col">9:10 To 10:10 AM</th>
                     <th scope="col">10:10 To 11:10 AM</th>
                     <th scope="col">11:15 To 12:15 AM</th>
-                    <th scope="col">Lunch</th>
+                    <th scope="col">12:15 to 1:00 PM</th>
                     <th scope="col">1:00 To 2:00 AM</th>
                     <th scope="col">2:00 To 3:00 AM</th>
                     <th scope="col">3:05 To 4:05 AM</th>
@@ -64,10 +71,12 @@
             <tbody>
                 <tr>
                     <th scope="row">MONDAY</th>
-                    <td>EAD</td>
+                    <td >EAD</td>
                     <td>SE</td>
                     <td>EAD LAB(B1) / CN LAB(B2)</td>
-                    <td rowspan="6"  style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 30px; text-align: center;">LUNCH</td>
+                    <td rowspan="6" style="font-size:30px; text-align:center; vertical-align:middle;">
+                        L<br>U<br>N<br>C<br>H
+                    </td>                    
                     <td>EAD LAB(B1) / CN LAB(B2)</td>
                     <td >PE-2</td>
                     <td >CN</td>
@@ -115,7 +124,7 @@
                     <td>ML</td>
                     <td>FLAT</td>
                     <td >PE-2</td>
-                    <td>EAD LAB(B2) / CN LAB(B1)</td>
+                    <td colspan="2">EAD LAB(B2) / CN LAB(B1)</td>
                 </tr>
                 <tr>
                     <th scope="row">SATURDAY</th>
