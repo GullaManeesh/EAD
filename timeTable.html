@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>TimeTable</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width:100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table{
+            width:70vw;
+            height: 80vh;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
+            border: 2px solid black;
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="con">
+            
+        <table class="table table-bordered table-striped text-center">
+
+            <thead>
+                <tr>
+                    <th scope="col">Period</th>
+                    <th scope="col">I</th>
+                    <th scope="col">II</th>
+                    <th scope="col">III</th>
+                    <th scope="col">Lunch</th>
+                    <th scope="col">IV</th>
+                    <th scope="col">V</th>
+                    <th scope="col">VI</th>
+                </tr>
+                <tr>
+                    <th scope="col">Date/Time</th>
+                    <th scope="col">9:10 To 10:10 AM</th>
+                    <th scope="col">10:10 To 11:10 AM</th>
+                    <th scope="col">11:15 To 12:15 AM</th>
+                    <th scope="col">Lunch</th>
+                    <th scope="col">1:00 To 2:00 AM</th>
+                    <th scope="col">2:00 To 3:00 AM</th>
+                    <th scope="col">3:05 To 4:05 AM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">MONDAY</th>
+                    <td>EAD</td>
+                    <td>SE</td>
+                    <td>EAD LAB(B1) / CN LAB(B2)</td>
+                    <td rowspan="6"  style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 30px; text-align: center;">LUNCH</td>
+                    <td>EAD LAB(B1) / CN LAB(B2)</td>
+                    <td >PE-2</td>
+                    <td >CN</td>
+                </tr>
+                <tr>
+                    <th scope="row">TUESDAY</th>
+                    <td>CN</td>
+                    <td>EAD</td>
+                    <td>ML</td>
+                    <td>FLAT</td>
+                    <td colspan="2">ML Lab(B1)/ CT LAB(B2)</td>
+                </tr>
+                <tr>
+                    <th scope="row">WEDNESDAY</th>
+                    <td>PE-2</td>
+                    <td>FLAT</td>
+                    <td>ML</td>
+                    <td>SE</td>
+                    <td colspan="2" style="padding: 0; height:50px;">
+                        <div style=" width: 100%; text-align: center;">CC LAB (B1)</div>
+                        <div style="display: flex;">
+                            <div style="flex:1; border:1px solid rgb(216, 213, 213) ; border-left: none;">LIBRARY(B2)</div>
+                            <div style="flex:1; border:1px solid rgb(211, 210, 210) ;">SPORTS(B2)</div>
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">THURSDAY</th>
+                    <td>ML LAB(B2) / CT LAB(B1)</td>
+                    <td>CN</td>
+                    <td>EAD</td>
+                    <td >PE-2</td>
+                    <td colspan="2" style="padding: 0; height:50px;">
+                        <div style=" width: 100%; text-align: center;">CC LAB (B2)</div>
+                        <div style="display: flex;">
+                            <div style="flex:1; border:1px solid rgb(216, 213, 213) ; border-left: none;">LIBRARY(B1)</div>
+                            <div style="flex:1; border:1px solid rgb(211, 210, 210) ;">SPORTS(B1)</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">FRIDAY</th>
+                    <td>SE</td>
+                    <td>ML</td>
+                    <td>FLAT</td>
+                    <td >PE-2</td>
+                    <td>EAD LAB(B2) / CN LAB(B1)</td>
+                </tr>
+                <tr>
+                    <th scope="row">SATURDAY</th>
+                    <td>MENTORING</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td ></td>
+                    <td ></td>
+                </tr>
+                    
+            </tbody>
+        </table>
+        </div>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
