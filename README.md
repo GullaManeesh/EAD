@@ -2,10 +2,9 @@
 
 
 
-- **🔐 Login Page**  
-- **📝 Register Page**  
-- **👑 Chess Board**  
-- **🧮 Calculator**  
-- **📅 Time Table**  
-- **⏲ Timer**  
-- **🔐 Password Strength Checker**  
+- **🔐 [Login Page](https://gullamaneesh.github.io/EAD/login)**
+- **📝 [Register Page](https://gullamaneesh.github.io/EAD/register)**
+- **👑 [Chess Board](https://gullamaneesh.github.io/EAD/chess)**
+- **🧮 [Calculator](https://gullamaneesh.github.io/EAD/calculator)**
+- **📅 [Time Table](https://gullamaneesh.github.io/EAD/timetable)**
+
