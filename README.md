@@ -1,4 +1,6 @@
-## 🔐 Login Page  
+## Enterprise Application Development (EAD) Lab Repository
+
+### 🔐 Login Page  
 ### 📝 Register Page
 ### 👑 Chess Board
 ### 🧮 Calculator
