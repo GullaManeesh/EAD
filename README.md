@@ -1,7 +1,7 @@
 ### 🔐 Login Page  
-📝 Register Page
-👑 Chess Board
-🧮 Calculator
-📅 Time Table
-⏲ Timer
-🔐 Password Strength Checker
+### 📝 Register Page
+### 👑 Chess Board
+### 🧮 Calculator
+### 📅 Time Table
+### ⏲ Timer
+### 🔐 Password Strength Checker
