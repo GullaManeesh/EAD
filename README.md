@@ -6,5 +6,5 @@
 - **📝 [Register Page](https://gullamaneesh.github.io/EAD/register)**
 - **👑 [Chess Board](https://gullamaneesh.github.io/EAD/chess)**
 - **🧮 [Calculator](https://gullamaneesh.github.io/EAD/calculator)**
-- **📅 [Time Table](https://gullamaneesh.github.io/EAD/timetable)**
+- **📅 [Time Table](https://gullamaneesh.github.io/EAD/timeTable)**
 
