@@ -11,3 +11,25 @@ function Parent() {
 }
 
 export default Parent;
+
+////
+
+import React, { useState } from "react";
+import Child from "./Child.jsx";
+
+const Parent = () => {
+  const [value, setValue] = useState(0);
+
+  const inc = () => {
+    setValue(value + 1);
+  };
+  return (
+  
+    <div>
+      <h1>{value}</h1>
+      <Child increment={inc} />
+    </div>
+  );
+};
+
+export default Parent;
