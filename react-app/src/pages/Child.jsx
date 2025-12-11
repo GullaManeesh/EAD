@@ -23,4 +23,18 @@ const Child = ({ increment }) => {
 };
 
 export default Child;
+
+
  ///
+import React from "react";
+
+function Child({ data }) {
+  return (
+    <div>
+      <h1>below is the text typed in parent component</h1>
+      <p>{data}</p>
+    </div>
+  );
+}
+
+export default Child;
