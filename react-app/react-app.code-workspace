@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "react-app",
+		"path": "."
+	},
+	{
+		"name": "EAD",
+		"path": "../../ead-external/EAD"
+	}
+],
+  "settings": {}
+}
