@@ -25,14 +25,14 @@ function Home() {
       <a style={{ cursor: "pointer" }} onClick={() => navigate("/table")}>
         table
       </a>
-      <a style={{ cursor: "pointer" }} onClick={() => setShow((prev) => !prev)}>
+      <a style={{ cursor: "pointer" }} onClick={() => setShow(true)}>
         PORTAL
       </a>
 
       {show && (
         <Portal>
           <h1>this is a portal</h1>
-          <button onClick={() => setShow((prev) => !prev)}>close</button>
+          <button onClick={() => setShow(false)}>close</button>
         </Portal>
       )}
     </div>
