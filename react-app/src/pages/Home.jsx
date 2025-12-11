@@ -25,8 +25,10 @@ function Home() {
       <a style={{ cursor: "pointer" }} onClick={() => navigate("/table")}>
         table
       </a>
+
+      //portal code
       <a style={{ cursor: "pointer" }} onClick={() => setShow(true)}>
-        PORTAL
+        open portal
       </a>
 
       {show && (
