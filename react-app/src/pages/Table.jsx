@@ -8,9 +8,9 @@ function Table() {
   ];
 
   const columns = [
-    { Header: "Name", accesspr: "name" },
-    { Header: "Age", accesspr: "age" },
-    { Header: "City", accesspr: "city" },
+    { Header: "Name", accessor: "name" },
+    { Header: "Age", accessor: "age" },
+    { Header: "City", accessor: "city" },
   ];
   return (
     <div>
